@@ -5,24 +5,35 @@
  */
 package com.br.rafael.Objeto;
 
+import com.br.rafael.Objeto.Aluno;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
- * @author rafael.152317
+ * @author wellyton.154317
  */
-public class Disciplinas extends Aluno {
-
+public class Disciplinas {
     private String nome;
-    private String departamento;
+    private String departamento ;
     private char status;
 
-    public Disciplinas(ArrayList<Disciplinas> Disciplinas, int cargaHoraria, float valorHora, float salario, String nome, String rg, String cpf, String datanascimento, String idade) {
-        super(Disciplinas, cargaHoraria, valorHora, salario, nome, rg, cpf, datanascimento, idade);
+    public Disciplinas(int cargaHoraria, float valorHora, float salario) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String toString() {
+        return "Disciplina{" + "nome=" + nome + ", departamento=" + departamento + ", status=" + status + '}';
+    }
+
+    public Disciplinas(String nome, String departamento, char status) {
+        this.nome = nome;
+        this.departamento = departamento;
+        this.status = status;
     }
 
     
-    
+
 
     public String getNome() {
         return nome;
@@ -47,10 +58,5 @@ public class Disciplinas extends Aluno {
     public void setStatus(char status) {
         this.status = status;
     }
-
-    @Override
-    public String toString() {
-        return "Disciplinas{" + "nome=" + nome + ", departamento=" + departamento + ", status=" + status + '}';
-    }
-
+     
 }

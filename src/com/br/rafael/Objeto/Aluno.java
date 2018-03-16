@@ -12,15 +12,19 @@ import java.util.Calendar;
  *
  * @author rafael.152317
  */
-public class Aluno extends Professor {
+public class Aluno  {
     
     private int matricula;
     private int dataMatricula;
     private ArrayList <Disciplinas> Disciplinas;
 
-    public Aluno(ArrayList<com.br.rafael.Objeto.Disciplinas> Disciplinas, int cargaHoraria, float valorHora, float salario, String nome, String rg, String cpf, String datanascimento, String idade) {
-        super(Disciplinas, cargaHoraria, valorHora, salario, nome, rg, cpf, datanascimento, idade);
+    public Aluno(int matricula, int dataMatricula, ArrayList<Disciplinas> Disciplinas) {
+        this.matricula = matricula;
+        this.dataMatricula = dataMatricula;
+        this.Disciplinas = Disciplinas;
     }
+
+   
 
     public int getDataMatricula() {
         return dataMatricula;
