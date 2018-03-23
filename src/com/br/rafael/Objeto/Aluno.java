@@ -7,12 +7,17 @@ package com.br.rafael.Objeto;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  *
  * @author rafael.152317
  */
 public class Aluno  {
+
+    public static void add(Aluno aluno) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     private int matricula;
     private int dataMatricula;
@@ -22,6 +27,10 @@ public class Aluno  {
         this.matricula = matricula;
         this.dataMatricula = dataMatricula;
         this.Disciplinas = Disciplinas;
+    }
+
+    public Aluno(int matricula, Date dataNascimento, String nome, String cpf, String rg, int idade, Date dataMatricula) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
    

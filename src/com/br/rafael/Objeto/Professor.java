@@ -6,6 +6,7 @@
 package com.br.rafael.Objeto;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
@@ -19,6 +20,10 @@ public class Professor {
      private float salario;
 
     public Professor(int cargaHoraria, float valorHora, float salario) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Professor(int cargaHoraria, float valorHora, float salario, String nome, String rg, String cpf, int idade, Date dataNascimento) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
      
